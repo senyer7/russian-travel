@@ -272,6 +272,7 @@
   text-decoration: none;
   color: inherit;
   z-index: 3;
+  text-decoration: none;
 }
 
 .cover__link:hover {
@@ -659,3 +660,4 @@
         margin-top: 16px;
     }
 }
+
