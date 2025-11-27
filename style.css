@@ -1,8 +1,16 @@
+:root {
+    --border-rad-img: 25px;
+    --border-rad-img-gallery: 13px;
+    --border-rad-img-place: 11px;
+    --border-rad-cover-overlay: 11px;
+}
+
 .page {
     width: 1280px;
     margin: auto;
     background: #2a2c2f;
     font-family: "Inter", sans-serif;
+    user-select: none;
 }
 
 .header {
@@ -72,6 +80,7 @@
     background: url("images/lead.png");
     background-size: cover;
     position: relative;
+    border-radius: var(--border-rad-img);
 }
 
 .lead__image-map {
@@ -143,6 +152,7 @@
 .photo-grid__element {
     width: 284px;
     height: 213px;
+    border-radius: var(--border-rad-img-gallery);
 }
 
 .places {
@@ -212,6 +222,7 @@
 .place__image {
     width: 460px;
     height: 460px;
+    border-radius: var(--border-rad-img-place);
 }
 
 .cover {
@@ -223,6 +234,7 @@
     background: url(images/cover.png);
     background-size: cover;
     position: relative;
+    border-radius: var(--border-rad-cover-overlay);
 }
 
 .cover__overlay {
@@ -234,6 +246,7 @@
     background: rgba(42, 44, 47, 0.3);
     z-index: 1;
     transition: 0.5s;
+    
 }
 
 .cover__title {
@@ -250,6 +263,31 @@
     position: relative;
     z-index: 2;
 }
+
+.cover__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  z-index: 3;
+}
+
+.cover__link:hover {
+  cursor: pointer;
+}
+
+.cover__overlay {
+  z-index: 1;
+}
+
+.cover__title,
+.cover__subtitle {
+  position: relative;
+  z-index: 2;
+}
+
 
 .cover__subtitle {
     font-size: 18px;
